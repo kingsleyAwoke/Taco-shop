@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kingsley Awoke">
+    <title>Contact Page</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__h1">Contact Us</h1>
+        <nav class="header__nav">
+            <ul class="header__ul">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#menu">Menu</a></li>
+                <li><a href="hours.html">Hours</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <figure>
+            <img src="../img/tacos_close_up_1000x649.png" alt="Little Taco Shop" width="1000" height="649">
+            <figcaption>Little Taco Shop</figcaption>
+        </figure>
+    </section>
+    <main class="main">
+        <article class="main__article contact">
+            <h2 class="contact__h2">Our Location</h2>
+            <address>
+                555 Taco Tempation Lane, Suit T
+                <br>
+                Kansa City, MO 55555-5555
+                <br>
+                <br>
+                phone: <a href="tel:+2345904095969">+234960502049</a>
+            </address>
+        </article>
+        <article class="main__article">
+            <h2>Our Contact Form</h2>
+            <form action="https://httpbin.org/get " method="get" class="contact__form">
+                <fieldset class="contact__fieldset">
+                    <legend class="offscreen">Send US A Message</legend>
+                    <label for="contact" class="contact__label">Name:</label>
+                    <input class="contact__input" type="text" name="contact" id="contact" placeholder="Your Name.." required>
+                    <br class="contact__br">
+                    <label for="contact" class="contact__label">Email:</label>
+                    <input class="contact__input" type="email" name="contact" id="contact" placeholder="Your Email.." required>
+                    <br class="contact__br">
+                    <label for="contact" class="contact__label">Your Message:</label>
+                    <br class="contact__br">
+                    <textarea class="contact__textarea" name="contact" id="contact" placeholder="Type Your Message here.." cols="30" rows="10"></textarea>
+                </fieldset>
+                <button class="contact__button" type="submit">Send</button>
+                <button class="contact__button" type="reset">Reset</button>
+        </form>
+        </article>
+        <a href="#">Back to Top</a>
+    </main>
+    <hr>
+    <footer class="footer">
+        <p>
+            <span class="nowrap">Copyright &copy; <time id="year"></time></span>
+            <span class="nowrap">The Littel Tacos Shop</span>
+        </p>
+    </footer>
+    <script src="script.js" defer></script>
+</body>
+</html>
